@@ -1,3 +1,9 @@
+此库待修改, 因为有很多需要跟进的地方
+
+
+下面是原库的介绍:
+
+
 ![ReactjsPlayer](./docs/logo128x128.png)
 
 # ReactjsPlayer
