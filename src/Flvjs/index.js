@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import useFlvjs from '@reactjs-player/use-flvjs';
 
 const Flvjs = props => {

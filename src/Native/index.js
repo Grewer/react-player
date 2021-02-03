@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import useNative from '@reactjs-player/use-native';
+import useNative from '../hooks/use-native';
 
 const Native = props => {
   useNative(props);

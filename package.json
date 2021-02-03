@@ -1,15 +1,13 @@
 {
   "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
-    "lint": "eslint --ext .js packages",
+    "lint": "eslint src",
     "nrm": "nrm use taobao",
     "start": "rollup -c ./scripts/rollup.config.dev.js -w",
     "build": "rollup -c ./scripts/rollup.config.prod.js",
     "pub": "npm publish --access=public"
   },
+  "main": "src/index.ts",
   "devDependencies": {
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
@@ -42,9 +40,7 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint",
-      "pre-push": "yarn test --watchAll=false"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "eslintIgnore": [

@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import useVideoState from '@reactjs-player/use-state';
-import useTime from '@reactjs-player/use-time';
-import useVolume from '@reactjs-player/use-volume';
-import usePlaybackRate from '@reactjs-player/use-playback-rate';
-import usePiP from '@reactjs-player/use-pip';
-import useFullscreen from '@reactjs-player/use-fullscreen';
-import useAutoplay from '@reactjs-player/use-autoplay';
+import useVideoState from '../hooks/use-state';
+import useTime from '../hooks/use-time';
+import useVolume from '../hooks/use-volume';
+import usePlaybackRate from '../hooks/use-playback-rate';
+import usePiP from '../hooks/use-pip';
+import useFullscreen from '../hooks/use-fullscreen';
+import useAutoplay from '../hooks/use-autoplay';
 
 import Flvjs from '../Flvjs';
 import Hlsjs from '../Hlsjs';
